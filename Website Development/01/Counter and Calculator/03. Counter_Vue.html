@@ -1,0 +1,21 @@
+<div id="app">
+    <button @click="increment">Count is: {{ count }}</button>
+</div>
+<!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+<!-- <script src="https://unpkg.com/vue@2.5.13/dist/vue.js"></script> -->
+<script src="vue2.js"></script>
+<!-- <script src="vue3.js"></script> -->
+<script> 
+	new Vue ({
+        el: "#app",
+	    data: {
+            count: 0
+	    },
+	    methods: {
+            increment() {
+                this.count++
+            }
+	    }
+	})
+</script>
+
